@@ -164,9 +164,28 @@ footer span { font-size: .78rem; color: var(--muted); }
   border-radius: var(--radius);
   border: 1px solid var(--border);
   display: flex; align-items: center; justify-content: center;
-  color: var(--muted); font-size: .9rem;
+  overflow: hidden;
+  position: relative;
 }
-.product-info h1 { font-size: 2rem; font-weight: 700; letter-spacing: -.03em; margin-bottom: 12px; font-family: var(--display); }
+.product-preview img {
+  width: 100%; height: 100%; object-fit: cover;
+  position: absolute; inset: 0;
+}
+.product-info h1 {
+  font-size: 2rem; font-weight: 700; letter-spacing: -.03em;
+  margin-bottom: 12px; font-family: var(--display);
+}
+.product-info h1 img {
+  display: inline-block; vertical-align: middle;
+  width: 28px; height: 28px; margin-right: 8px;
+}
+
+.card-icon {
+  display: inline-block; vertical-align: middle;
+  width: 26px; height: 26px; margin-right: 7px;
+  opacity: 0.9; filter: none;
+}
+
 .product-info .price { font-size: 1.4rem; font-weight: 500; font-family: var(--display); color: var(--amber); letter-spacing: .01em; margin-bottom: 22px; }
 .product-info p { font-size: .9rem; color: var(--muted); line-height: 1.7; margin-bottom: 30px; }
 .product-features { margin-bottom: 36px; }
