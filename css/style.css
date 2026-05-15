@@ -185,6 +185,14 @@ footer span { font-size: .78rem; color: var(--muted); }
 .legal h2 { font-size: 1.1rem; font-weight: 600; margin: 36px 0 12px; color: var(--text); font-family: var(--display); }
 .legal p { font-size: .875rem; color: var(--muted); line-height: 1.75; margin-bottom: 14px; }
 
+
+/* ─── LEMONSQUEEZY OVERRIDES ─── */
+.lemonsqueezy-button,
+.lemonsqueezy-button *,
+.ls-button,
+.ls-button * {
+  font-family: var(--body) !important;
+}
 /* ─── BUY SECTION ─── */
 .buy-section { padding: 0 0 80px; }
 .buy-section .inner { text-align: center; }
