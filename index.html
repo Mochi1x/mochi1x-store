@@ -20,9 +20,17 @@
 
 <section class="product-detail">
   <div class="inner">
-    <div class="product-preview">
-      <img src="images/journal-screenshot.png" alt="Trading Journal Pro screenshot">
-    </div>
+    <input type="checkbox" id="screenshot-toggle" class="lightbox-toggle">
+
+    <label for="screenshot-toggle" class="product-preview">
+      <img src="images/journal-screenshot.png" alt="Trading Journal Pro screenshot — click to enlarge">
+    </label>
+
+    <label for="screenshot-toggle" class="lightbox" id="lightbox">
+      <div class="lightbox-inner">
+        <img src="images/journal-screenshot.png" alt="Trading Journal Pro screenshot — enlarged">
+      </div>
+    </label>
     <div class="product-info">
       <p class="card-badge">Notion Template</p>
       <h1><img src="images/journal-icon.webp" alt="" class="card-icon"> Trading Journal Pro</h1>
