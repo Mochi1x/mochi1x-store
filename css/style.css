@@ -73,6 +73,7 @@ nav a:hover { color: var(--text); }
   display: inline-flex; align-items: center; gap: 8px;
   padding: 13px 30px; border-radius: 10px;
   font-size: .95rem; font-weight: 600;
+  font-family: var(--body);
   cursor: pointer; border: none; transition: transform .22s var(--spring), box-shadow .22s var(--spring);
   position: relative; overflow: hidden;
 }
@@ -183,6 +184,56 @@ footer span { font-size: .78rem; color: var(--muted); }
 .legal h1 { font-size: 1.9rem; font-weight: 700; letter-spacing: -.03em; margin-bottom: 12px; font-family: var(--display); }
 .legal h2 { font-size: 1.1rem; font-weight: 600; margin: 36px 0 12px; color: var(--text); font-family: var(--display); }
 .legal p { font-size: .875rem; color: var(--muted); line-height: 1.75; margin-bottom: 14px; }
+
+/* ─── BUY SECTION ─── */
+.buy-section { padding: 0 0 80px; }
+.buy-section .inner { text-align: center; }
+.buy-note {
+  font-size: .78rem;
+  color: var(--muted);
+  margin-top: 14px;
+  font-family: var(--body);
+}
+.btn-lg {
+  font-size: 1.1rem;
+  padding: 16px 44px;
+}
+
+/* ─── FAQ ─── */
+.faq-section {
+  padding: 40px 0 80px;
+  border-top: 1px solid var(--border);
+}
+.section-heading {
+  font-size: 1.4rem;
+  font-weight: 700;
+  font-family: var(--display);
+  margin-bottom: 28px;
+}
+.faq-list {
+  max-width: 700px;
+}
+.faq-item {
+  margin-bottom: 24px;
+}
+.faq-q {
+  font-size: .9rem;
+  color: var(--text);
+  margin-bottom: 6px;
+  font-family: var(--body);
+}
+.faq-a {
+  font-size: .875rem;
+  color: var(--muted);
+  line-height: 1.7;
+  font-family: var(--body);
+}
+.text-link {
+  color: var(--amber);
+}
+.text-link:hover { color: var(--amber); }
+
+
 
 @media (max-width: 700px) {
   .product-detail .inner { grid-template-columns: 1fr; }
