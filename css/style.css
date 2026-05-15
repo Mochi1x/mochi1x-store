@@ -37,7 +37,7 @@ header {
   padding: 16px 0;
 }
 header .inner { display: flex; align-items: center; justify-content: space-between; }
-.logo { font-size: 1.15rem; font-weight: 700; letter-spacing: -.015em; }
+.logo { font-size: 1.15rem; font-weight: 700; letter-spacing: -.015em; font-family: var(--display); }
 .logo span { color: var(--amber); }
 nav { display: flex; gap: 28px; }
 nav a { font-size: .875rem; color: var(--muted); transition: color .2s; }
@@ -54,6 +54,7 @@ nav a:hover { color: var(--text); }
   letter-spacing: -.03em;
   line-height: 1.15;
   margin-bottom: 18px;
+  font-family: var(--display);
 }
 .hero h1 em {
   font-style: normal;
@@ -133,7 +134,7 @@ nav a:hover { color: var(--text); }
   color: var(--amber);
   margin-bottom: 8px;
 }
-.card-body h3 { font-size: 1rem; font-weight: 650; margin-bottom: 6px; }
+.card-body h3 { font-size: 1rem; font-weight: 650; margin-bottom: 6px; font-family: var(--display); }
 .card-body p { font-size: .85rem; color: var(--muted); line-height: 1.55; }
 .card-footer { padding: 14px 22px; border-top: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; }
 .card-price { font-size: 1.05rem; font-weight: 700; color: var(--amber); }
@@ -143,7 +144,7 @@ nav a:hover { color: var(--text); }
 .features .inner { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 32px; }
 .feature-icon { font-size: 1.8rem; margin-bottom: 12px; }
 .feature-icon span { color: var(--amber); }
-.features h3 { font-size: .95rem; font-weight: 600; margin-bottom: 8px; }
+.features h3 { font-size: .95rem; font-weight: 600; margin-bottom: 8px; font-family: var(--display); }
 .features p  { font-size: .83rem; color: var(--muted); line-height: 1.55; }
 
 /* ─── FOOTER ─── */
@@ -164,8 +165,8 @@ footer span { font-size: .78rem; color: var(--muted); }
   display: flex; align-items: center; justify-content: center;
   color: var(--muted); font-size: .9rem;
 }
-.product-info h1 { font-size: 2rem; font-weight: 700; letter-spacing: -.03em; margin-bottom: 12px; }
-.product-info .price { font-size: 1.6rem; font-weight: 700; color: var(--amber); margin-bottom: 22px; }
+.product-info h1 { font-size: 2rem; font-weight: 700; letter-spacing: -.03em; margin-bottom: 12px; font-family: var(--display); }
+.product-info .price { font-size: 1.4rem; font-weight: 500; font-family: var(--display); color: var(--amber); letter-spacing: .01em; margin-bottom: 22px; }
 .product-info p { font-size: .9rem; color: var(--muted); line-height: 1.7; margin-bottom: 30px; }
 .product-features { margin-bottom: 36px; }
 .product-features li {
@@ -179,8 +180,8 @@ footer span { font-size: .78rem; color: var(--muted); }
 /* ─── LEGAL ─── */
 .legal { padding: 80px 0; border-top: 1px solid var(--border); }
 .legal .inner { max-width: 760px; }
-.legal h1 { font-size: 1.9rem; font-weight: 700; letter-spacing: -.03em; margin-bottom: 12px; }
-.legal h2 { font-size: 1.1rem; font-weight: 600; margin: 36px 0 12px; color: var(--text); }
+.legal h1 { font-size: 1.9rem; font-weight: 700; letter-spacing: -.03em; margin-bottom: 12px; font-family: var(--display); }
+.legal h2 { font-size: 1.1rem; font-weight: 600; margin: 36px 0 12px; color: var(--text); font-family: var(--display); }
 .legal p { font-size: .875rem; color: var(--muted); line-height: 1.75; margin-bottom: 14px; }
 
 @media (max-width: 700px) {
@@ -188,27 +189,3 @@ footer span { font-size: .78rem; color: var(--muted); }
   nav { gap: 16px; }
   }
 }
-
-/* font proxy additions */
-.hero h1,
-.card-body h3,
-.features h3,
-.legal h1,
-.legal h2,
-.logo,
-.product-info h1 {
-  font-family: var(--display);
-}
-
-.product-info .price {
-  font-size: 1.4rem;
-  font-weight: 500;
-  font-family: var(--display);
-  color: var(--amber);
-  letter-spacing: .01em;
-  margin-bottom: 22px;
-}
-
-/* ─── footer ─── */
-
-/* ─── kept original rules ─── */
