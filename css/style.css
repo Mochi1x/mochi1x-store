@@ -185,8 +185,8 @@ nav a:hover { color: var(--text); }
   margin-bottom: 16px;
 }
 .about-bio {
-  font-size: 1.35rem;
-  font-weight: 500;
+  font-size: 1.1rem;
+  font-weight: 400;
   line-height: 1.6;
   border-left: 2px solid var(--amber-dim);
   padding-left: 14px;
