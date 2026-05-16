@@ -149,6 +149,37 @@ nav a:hover { color: var(--text); }
   column-gap: 28px;
 }
 
+.features-col {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.features-col .feature-card {
+  width: 100%;
+}
+.about-col {
+  padding: 36px 32px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  height: fit-content;
+  position: sticky;
+  top: 100px;
+}
+.about-col .section-heading {
+  font-size: 1.15rem;
+  letter-spacing: -.015em;
+}
+.about-col p {
+  font-size: .875rem;
+  color: var(--muted);
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+.about-col p:last-child {
+  margin-bottom: 0;
+}
+
 .feature-card { display: flex; flex-direction: column; }
 .feature-card > .feature-thumb { border-radius: calc(var(--radius) - 2px) calc(var(--radius) - 2px) 0 0; margin-bottom: 0; }
 .feature-card > .feature-card {
