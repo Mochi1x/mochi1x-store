@@ -142,7 +142,11 @@ nav a:hover { color: var(--text); }
 
 /* ─── FEATURES ─── */
 .features { padding: 80px 0; border-top: 1px solid var(--border); }
-.features .inner { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 32px; }
+.features .inner { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 28px; }
+.feature-card { display: flex; flex-direction: column; }
+.feature-card > .feature-thumb { border-radius: calc(var(--radius) - 2px) calc(var(--radius) - 2px) 0 0; margin-bottom: 0; }
+.feature-card > .feature-text { padding: 18px; background: var(--surface); border: 1px solid var(--border); border-radius: 0 0 calc(var(--radius) - 2px) calc(var(--radius) - 2px); }
+.feature-card > .feature-text { padding: 18px; background: var(--surface); border: 1px solid var(--border); border-radius: 0 0 calc(var(--radius) - 2px) calc(var(--radius) - 2px); }
 .feature-icon { font-size: 1.8rem; margin-bottom: 12px; }
 .feature-thumb {
   display: flex;
