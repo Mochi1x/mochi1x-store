@@ -145,14 +145,14 @@ nav a:hover { color: var(--text); }
 .features .inner {
   display: grid;
   grid-template-columns: auto 1fr;
-  gap: 40px;
+  gap: 28px;
 }
 
 .features-col {
   display: flex;
   flex-direction: column;
-  gap: 24px;
-  max-width: 520px;
+  gap: 16px;
+  max-width: 420px;
   flex-shrink: 0;
 }
 
@@ -196,8 +196,8 @@ nav a:hover { color: var(--text); }
 
 
 .feature-text { padding: 18px; background: var(--surface); border: 1px solid var(--border); border-radius: 0 0 calc(var(--radius) - 2px) calc(var(--radius) - 2px); }
-.feature-card > .feature-text { padding: 18px; background: var(--surface); border: 1px solid var(--border); border-radius: 0 0 calc(var(--radius) - 2px) calc(var(--radius) - 2px); }
-.feature-icon { font-size: 1.8rem; margin-bottom: 12px; }
+.feature-card > .feature-text { padding: 14px; background: var(--surface); border: 1px solid var(--border); border-radius: 0 0 calc(var(--radius) - 2px) calc(var(--radius) - 2px); }
+.feature-icon { font-size: 1.5rem; margin-bottom: 8px; }
 .feature-thumb {
   display: flex;
   aspect-ratio: 16/10;
@@ -208,7 +208,7 @@ nav a:hover { color: var(--text); }
   position: relative;
   cursor: zoom-in;
   box-shadow: 0 6px 28px rgba(0,0,0,.45), 0 0 0 1px rgba(212, 166, 89, .1) inset;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
 }
 .feature-thumb img {
   width: 100%; height: 100%; object-fit: cover;
@@ -244,11 +244,11 @@ nav a:hover { color: var(--text); }
   pointer-events: none;
   border-radius: 0 0 calc(var(--radius) - 2px) calc(var(--radius) - 2px);
 }
-.feature-thumb:hover img { filter: brightness(1.08); }
-
+.feature-thumb { aspect-ratio: 16/10; }
+  aspect-ratio: 16/10;
 .feature-icon span { color: var(--amber); }
-.features h3 { font-size: .95rem; font-weight: 600; margin-bottom: 8px; font-family: var(--display); }
-.features p  { font-size: .83rem; color: var(--muted); line-height: 1.55; }
+.features h3 { font-size: .88rem; font-weight: 600; margin-bottom: 6px; font-family: var(--display); }
+.features p  { font-size: .78rem; color: var(--muted); line-height: 1.5; }
 
 /* ─── FOOTER ─── */
 footer { border-top: 1px solid var(--border); padding: 36px 0 48px; }
@@ -455,5 +455,4 @@ footer span { font-size: .78rem; color: var(--muted); }
 @media (max-width: 700px) {
   .product-detail .inner { grid-template-columns: 1fr; }
   nav { gap: 16px; }
-  }
 }
