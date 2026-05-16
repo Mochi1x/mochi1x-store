@@ -144,16 +144,15 @@ nav a:hover { color: var(--text); }
 .features { padding: 80px 0; border-top: 1px solid var(--border); }
 .features .inner {
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: 1fr;
   gap: 28px;
 }
 
 .features-col {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
   gap: 16px;
-  max-width: 340px;
-  flex-shrink: 0;
+  width: 100%;
 }
 
 /* ─── ABOUT SECTION ─── */
