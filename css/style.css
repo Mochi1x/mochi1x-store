@@ -156,46 +156,9 @@ nav a:hover { color: var(--text); }
   flex-shrink: 0;
 }
 
-/* ─── ABOUT HEADER (right column) ─── */
-.about-header {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding-top: 8px;
-}
-.about-name {
-  font-family: var(--display);
-  font-size: clamp(1.5rem, 2.8vw, 2.2rem);
-  font-weight: 700;
-  letter-spacing: -.03em;
-  color: var(--text);
-  margin-bottom: 4px;
-  line-height: 1.15;
-}
-.about-role {
-  font-family: var(--body);
-  font-size: .75rem;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: .22em;
-  color: var(--amber);
-  margin-bottom: 24px;
-}
-
-/* ─── ABOUT BIO ─── */
-.about-bio {
-  font-size: .95rem;
-  font-weight: 500;
-  line-height: 1.6;
-  max-width: 340px;
-  border-left: 2px solid var(--amber-dim);
-  padding-left: 14px;
-  margin-top: 8px;
-}
-
-
-
 .feature-card { display: flex; flex-direction: column; }
+
+/* ─── FOOTER ─── */
 .feature-card > .feature-thumb { border-radius: calc(var(--radius) - 2px) calc(var(--radius) - 2px) 0 0; margin-bottom: 0; }
 .feature-card > .feature-card {
   display: flex;
