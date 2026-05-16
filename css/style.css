@@ -256,7 +256,7 @@ nav a:hover { color: var(--text); }
 .feature-thumb { aspect-ratio: 16/10; }
   aspect-ratio: 16/10;
 .feature-icon span { color: var(--amber); }
-.features h3 { font-size: .88rem; font-weight: 600; margin-bottom: 6px; font-family: var(--display); }
+.features h3 { font-size: .88rem; font-weight: 600; margin-bottom: 6px; font-family: var(--display); color: var(--amber); }
 .features p  { font-size: .78rem; color: var(--muted); line-height: 1.5; }
 
 /* ─── FOOTER ─── */
