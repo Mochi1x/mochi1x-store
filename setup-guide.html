@@ -3,20 +3,103 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Setup Guide — Trading Journal Pro</title>
+  <title>Setup Guide — Trading Journal Pro | Mochi Templates</title>
   <meta name="description" content="Step-by-step setup guide for Trading Journal Pro — get your Notion journal running in under 5 minutes." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css?v=f5477a0" />
+  <style>
+    /* ─── SETUP GUIDE OVERRIDES ─── */
+    .setup-list {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+    .setup-step {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px 32px;
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 28px;
+      align-items: start;
+      transition: border-color .25s, box-shadow .25s;
+    }
+    .setup-step:hover {
+      border-color: rgba(255,255,255,.14);
+      box-shadow: 0 8px 32px rgba(0,0,0,.4);
+    }
+    .step-number {
+      font-family: var(--display);
+      font-size: 2.6rem;
+      font-weight: 700;
+      color: var(--amber);
+      line-height: 1;
+      min-width: 56px;
+      padding-top: 2px;
+      text-shadow: 0 0 30px var(--amber-glow);
+    }
+    .step-body h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 10px;
+      font-family: var(--display);
+      color: var(--text);
+    }
+    .step-body p {
+      font-size: .875rem;
+      color: var(--muted);
+      line-height: 1.75;
+    }
+    .step-body p strong {
+      color: var(--text);
+    }
+    .step-body a {
+      color: var(--amber);
+    }
+    .step-body a:hover {
+      text-shadow: 0 0 10px var(--amber-glow);
+    }
+    .buy-blueprint {
+      background: linear-gradient(135deg, rgba(212,166,89,.07), rgba(212,166,89,.02));
+      border: 1px solid rgba(212,166,89,.18);
+    }
+    .buy-blueprint .buy-inner {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 24px;
+      align-items: center;
+    }
+    .buy-icon {
+      font-size: 2.2rem;
+      color: var(--amber);
+      filter: drop-shadow(0 0 12px var(--amber-glow));
+    }
+    @media (max-width: 640px) {
+      .setup-step {
+        grid-template-columns: 1fr;
+        padding: 22px 20px;
+      }
+      .step-number {
+        font-size: 2rem;
+        min-width: auto;
+      }
+      .buy-blueprint .buy-inner {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+    }
+  </style>
 </head>
 <body>
 
 <header>
   <div class="inner">
-    <div class="logo"><a href="/">mochi <span>templates</span></a></div>
+    <div class="logo"><a href="./">mochi <span>templates</span></a></div>
     <nav>
-      <a href="./setup-guide.html" class="active">Setup Guide</a>
+      <a href="./setup-guide.html" class="active" style="color:var(--amber);">Setup Guide</a>
       <a href="./product/trading-journal-pro.html">Template</a>
       <a href="./setup-guide.html#faq">FAQ</a>
       <a href="./legal/terms.html">Terms</a>
@@ -26,105 +109,112 @@
 
 <section class="hero">
   <div class="inner">
+    <div style="font-size:2.4rem;margin-bottom:22px;filter:drop-shadow(0 0 22px var(--amber-glow));">◈</div>
     <h1>Setup Guide</h1>
-    <p>A quick walkthrough to get your <strong>Trading Journal Pro</strong> up and running in Notion.</p>
+    <p>A quick walkthrough to get your <strong>Trading Journal Pro</strong> up and running in Notion — under 5 minutes, zero config.</p>
   </div>
 </section>
 
 <section class="features">
   <div class="inner">
     <div class="features-col">
+      <div class="setup-list">
 
-      <!-- Step 1 -->
-      <div class="feature-card">
-        <div class="feature-text">
-          <div class="feature-icon"><span>01</span></div>
-          <h3>Get your duplication link</h3>
-          <p>After checkout on Lemon Squeezy you'll receive an email with a <strong>Notion duplication link</strong>. Check your inbox (and spam) — it should arrive instantly. If you haven't received it, drop me a line at <a href="mailto:jayvinn.pacheco@gmail.com" class="text-link">jayvinn.pacheco@gmail.com</a>.</p>
+        <!-- Step 1 -->
+        <div class="setup-step">
+          <div class="step-number">01</div>
+          <div class="step-body">
+            <h3>Get your duplication link</h3>
+            <p>After checkout on Lemon Squeezy you'll receive an email with a <strong>Notion duplication link</strong>. Check your inbox (and spam) — it should arrive instantly. Haven't received it? Email <a href="mailto:jayvinn.pacheco@gmail.com">jayvinn.pacheco@gmail.com</a>.</p>
+          </div>
         </div>
-      </div>
 
-      <!-- Step 2 -->
-      <div class="feature-card">
-        <div class="feature-text">
-          <div class="feature-icon"><span>02</span></div>
-          <h3>Duplicate into your workspace</h3>
-          <p>Click the duplication link. Notion will open a preview — hit <strong>Duplicate</strong> in the top-right corner. The full journal copies into your personal workspace (or team workspace, if that's where you clicked). This is your private copy — no shared editing conflicts.</p>
+        <!-- Step 2 -->
+        <div class="setup-step">
+          <div class="step-number">02</div>
+          <div class="step-body">
+            <h3>Duplicate into your workspace</h3>
+            <p>Click the duplication link. Notion opens a preview — hit <strong>Duplicate</strong> in the top-right. The full journal copies into your personal (or team) workspace as a private copy — no shared-editing conflicts.</p>
+          </div>
         </div>
-      </div>
 
-      <!-- Step 3 -->
-      <div class="feature-card">
-        <div class="feature-text">
-          <div class="feature-icon"><span>03</span></div>
-          <h3>Familiarise yourself with the layout</h3>
-          <p>The journal is organised into views: <strong>Trade Entry</strong> (add new trades), <strong>Dashboard</strong> (aggregated stats and win-rate), and <strong>Daily / Weekly / Monthly</strong> P&amp;L roll-ups. Spend two minutes clicking around — each view pulls from the same underlying trade database, so your data is always in sync.</p>
+        <!-- Step 3 -->
+        <div class="setup-step">
+          <div class="step-number">03</div>
+          <div class="step-body">
+            <h3>Tour the layout</h3>
+            <p>Three main views: <strong>Trade Entry</strong> (add trades), <strong>Dashboard</strong> (hit-rate / R:R / biggest wins &amp; losses), and <strong>Daily / Weekly / Monthly</strong> P&amp;L roll-ups. All pull from the same underlying database — data stays in sync everywhere.</p>
+          </div>
         </div>
-      </div>
 
-      <!-- Step 4 -->
-      <div class="feature-card">
-        <div class="feature-text">
-          <div class="feature-icon"><span>04</span></div>
-          <h3>Duplicate the Trade Entry page</h3>
-          <p>The main <strong>Trade Entry</strong> database is already set up for new rows. No template work needed — just open the entry view and start logging trades. Each field maps cleanly: Ticker, Setup Type, Entry / Exit, Risk ($), Outcome ($ / R:R), Date, and Notes.</p>
+        <!-- Step 4 -->
+        <div class="setup-step">
+          <div class="step-number">04</div>
+          <div class="step-body">
+            <h3>Start logging trades</h3>
+            <p>The <strong>Trade Entry</strong> database is ready for new rows — no template work needed. Each field maps cleanly: Ticker, Setup Type, Entry / Exit, Risk ($), Outcome ($ / R:R), Date, Notes. Just open the entry view and fill it in.</p>
+          </div>
         </div>
-      </div>
 
-      <!-- Step 5 -->
-      <div class="feature-card">
-        <div class="feature-text">
-          <div class="feature-icon"><span>05</span></div>
-          <h3>Set your risk parameters</h3>
-          <p>Before logging real trades, confirm your <strong>risk-per-trade</strong> is entered in the Risk field consistently. The R:R calculations rely on it. Pick a percentage of your account (most traders use 1% or 2%) and stick with it — journal integrity depends on accurate risk data.</p>
+        <!-- Step 5 -->
+        <div class="setup-step">
+          <div class="step-number">05</div>
+          <div class="step-body">
+            <h3>Set your risk parameters</h3>
+            <p>Before logging real trades, confirm your <strong>risk-per-trade</strong> in the Risk field is consistent. R:R calculations depend on it. Pick a percentage (most traders use 1% or 2%) and stick with it — journal integrity lives and dies by accurate risk data.</p>
+          </div>
         </div>
-      </div>
 
-      <!-- Step 6 -->
-      <div class="feature-card">
-        <div class="feature-text">
-          <div class="feature-icon"><span>06</span></div>
-          <h3>Check the dashboard populated</h3>
-          <p>After logging at least one trade, hop to the <strong>Dashboard</strong> view. You should see win-rate, average R:R, and your best / worst sessions spinning up automatically. If nothing is showing up, ensure the trades have the correct date and that the dashboard view filters haven't been accidentally narrowed.</p>
+        <!-- Step 6 -->
+        <div class="setup-step">
+          <div class="step-number">06</div>
+          <div class="step-body">
+            <h3>Verify the dashboard</h3>
+            <p>After logging at least one trade, open the <strong>Dashboard</strong> view. Win-rate, average R:R, and your best / worst sessions should appear automatically. Nothing showing? Check that trades have the correct date and the dashboard filters haven't been silently narrowed.</p>
+          </div>
         </div>
-      </div>
 
-      <!-- Step 7 -->
-      <div class="feature-card">
-        <div class="feature-text">
-          <div class="feature-icon"><span>07</span></div>
-          <h3>Link daily charts and screenshots</h3>
-          <p>Use Notion's embed block or image upload inside each trade row for <strong>chart screenshots</strong> at entry and exit time. Being able to visually revisit your chart structure later is one of the journal's biggest advantages — you'll spot patterns you missed while trading live.</p>
+        <!-- Step 7 -->
+        <div class="setup-step">
+          <div class="step-number">07</div>
+          <div class="step-body">
+            <h3>Attach chart screenshots</h3>
+            <p>Use Notion's embed block or image upload inside each trade row for <strong>entry and exit charts</strong>. Being able to revisit your screenshot context later is one of the journal's biggest advantages — you'll spot patterns you missed while live.</p>
+          </div>
         </div>
-      </div>
 
-      <!-- Step 8 -->
-      <div class="feature-card">
-        <div class="feature-text">
-          <div class="feature-icon"><span>08</span></div>
-          <h3>Archive finished trade rows</h3>
-          <p>Once a trade is closed and reviewed, do not delete it — <strong>archive</strong> the row. Archiving keeps it queryable in dashboard roll-ups without cluttering your active entry list. Right-click a row in the database → <strong>Archive</strong>.</p>
+        <!-- Step 8 -->
+        <div class="setup-step">
+          <div class="step-number">08</div>
+          <div class="step-body">
+            <h3>Archive, don't delete</h3>
+            <p>Once a trade is closed and reviewed, <strong>archive</strong> the row — don't delete it. Archiving keeps it queryable in the dashboard roll-ups without cluttering your active entry list. Right-click a row in the database → <strong>Archive</strong>.</p>
+          </div>
         </div>
-      </div>
 
-      <!-- Step 9 -->
-      <div class="feature-card">
-        <div class="feature-text">
-          <div class="feature-icon"><span>09</span></div>
-          <h3>Schedule a weekly review</h3>
-          <p>Set a recurring calendar reminder for every <strong>Friday close</strong>. During your review: check win-rate by setup, compare daily P&amp;L streaks, and note any emotional or structural patterns. The journal rewards consistent review — the spreadsheet is only as good as what you extract from it.</p>
+        <!-- Step 9 -->
+        <div class="setup-step">
+          <div class="step-number">09</div>
+          <div class="step-body">
+            <h3>Schedule a weekly review</h3>
+            <p>Set a recurring <strong>Friday close</strong> reminder. During your review: spot check win-rate by setup, compare daily P&amp;L streaks, and flag any emotional or structural patterns. The journal rewards habit — the numbers only move if you look at them.</p>
+          </div>
         </div>
-      </div>
 
+      </div>
     </div>
   </div>
 </section>
 
-<section class="buy-section">
+<section style="border-top:1px solid var(--border);padding:60px 0 80px;">
   <div class="inner">
-    <a href="/product/trading-journal-pro.html"
-       class="lemonsqueezy-button btn btn-amber btn-lg" style="font-family:var(--body);">Get Trading Journal Pro</a>
-    <p class="buy-note">$15 one-time · Lifetime updates included · Instant delivery</p>
+    <div style="max-width:560px;margin:0 auto;text-align:center;font-size:.9rem;color:var(--muted);">
+      <p style="margin-bottom:10px;">Ready to set it up?</p>
+      <a href="./product/trading-journal-pro.html"
+         class="lemonsqueezy-button btn btn-amber btn-lg"
+         style="font-family:var(--body);">Get Trading Journal Pro</a>
+      <p style="font-size:.78rem;color:var(--muted);margin-top:16px;">$15 one-time &middot; Lifetime updates included &middot; Instant delivery</p>
+    </div>
   </div>
 </section>
 
@@ -135,19 +225,19 @@
     <div class="faq-list">
       <div class="faq-item">
         <p class="faq-q"><strong>Do I need a paid Notion plan?</strong></p>
-        <p class="faq-a">No — the free Personal plan is more than enough.</p>
+        <p class="faq-a">No — the free Personal plan handles everything.</p>
       </div>
       <div class="faq-item">
         <p class="faq-q"><strong>Can I share it with a trading partner?</strong></p>
-        <p class="faq-a">Single-seat license included. Team / reseller licenses — <a href="mailto:jayvinn.pacheco@gmail.com" class="text-link">email me</a>.</p>
+        <p class="faq-a">Single-seat included. <a href="./setup-guide.html" class="text-link">Team / reseller licenses</a> — <a href="mailto:jayvinn.pacheco@gmail.com" class="text-link">email me</a>.</p>
       </div>
       <div class="faq-item">
         <p class="faq-q"><strong>Does it work on mobile?</strong></p>
-        <p class="faq-a">Yes — log trades from the Notion app. Mobile captures work fine for quick entries.</p>
+        <p class="faq-a">Yes — log trades from the Notion app. Mobile entries work fine for quick capture.</p>
       </div>
       <div class="faq-item">
         <p class="faq-q"><strong>How do I stay updated?</strong></p>
-        <p class="faq-a">Lifetime updates are delivered to your duplication link. Re-duplicate to pull the latest version.</p>
+        <p class="faq-a">Lifetime updates land on your duplication link. Re-duplicate to pull the latest version any time.</p>
       </div>
     </div>
   </div>
