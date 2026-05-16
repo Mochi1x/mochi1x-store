@@ -179,7 +179,27 @@ nav a:hover { color: var(--text); }
   text-transform: uppercase;
   letter-spacing: .22em;
   color: var(--amber);
-  margin-bottom: 32px;
+  margin-bottom: 24px;
+}
+
+/* ─── ABOUT PORTRAIT ─── */
+.about-portrait {
+  width: 160px;
+  height: 160px;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  box-shadow: 0 8px 32px rgba(0,0,0,.5), 0 0 0 1px var(--amber-dim) inset;
+  transition: box-shadow .3s ease;
+}
+.about-portrait:hover {
+  box-shadow: 0 8px 40px rgba(0,0,0,.6), 0 0 0 1px var(--amber-glow) inset;
+}
+.about-portrait img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 
