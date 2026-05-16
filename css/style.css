@@ -144,8 +144,9 @@ nav a:hover { color: var(--text); }
 .features { padding: 80px 0; border-top: 1px solid var(--border); }
 .features .inner {
   display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 40px;
+  grid-template-columns: auto 2fr;
+  gap: 64px;
+  padding: 0 8%;
 }
 
 .features-col {
