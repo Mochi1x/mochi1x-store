@@ -184,9 +184,9 @@ nav a:hover { color: var(--text); }
 
 /* ─── ABOUT BIO ─── */
 .about-bio {
-  font-size: .82rem;
-  color: var(--muted);
-  line-height: 1.65;
+  font-size: .95rem;
+  font-weight: 500;
+  line-height: 1.6;
   max-width: 340px;
   border-left: 2px solid var(--amber-dim);
   padding-left: 14px;
