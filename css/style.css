@@ -251,6 +251,15 @@ footer span { font-size: .78rem; color: var(--muted); }
 #screenshot-toggle:checked ~ .lightbox {
   display: flex;
 }
+
+#feature-entry-toggle:checked ~ .lightbox {
+  display: flex;
+}
+#feature-entry-toggle:checked ~ .lightbox .lightbox-inner img {
+  transform: scale(1);
+}
+
+
 @keyframes lb-fade-in {
   from { opacity: 0; }
   to   { opacity: 1; }
