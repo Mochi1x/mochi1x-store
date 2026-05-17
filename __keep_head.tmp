@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Setup Guide — Trading Journal Pro | Mochi Templates</title>
+  <meta name="description" content="Step-by-step setup guide for Trading Journal Pro — get your Notion journal running in under 5 minutes." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css?v=f5477a0" />
+  <style>
+    /* ─── SETUP GUIDE OVERRIDES ─── */
+    .setup-list {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 30px;
+      max-width: 680px;
+      margin: 0 auto;
+    }
+    .setup-step {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px 32px;
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 28px;
+      align-items: start;
+      transition: border-color .25s, box-shadow .25s;
+    }
+    .setup-step:hover {
+      border-color: rgba(255,255,255,.14);
+      box-shadow: 0 8px 32px rgba(0,0,0,.4);
+    }
+    .step-number {
+      font-family: var(--display);
+      font-size: 2.6rem;
+      font-weight: 700;
+      color: var(--amber);
+      line-height: 1;
+      min-width: 56px;
+      padding-top: 2px;
+      text-shadow: 0 0 30px var(--amber-glow);
+    }
+    .step-body h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 10px;
+      font-family: var(--display);
+      color: var(--text);
+    }
+    .step-body p {
+      font-size: .875rem;
+      color: var(--muted);
+      line-height: 1.75;
+    }
+    .step-body p strong {
+      color: var(--text);
+    }
+    .step-body a {
+      color: var(--amber);
+    }
+    .step-body a:hover {
+      text-shadow: 0 0 10px var(--amber-glow);
+    }
+    .buy-blueprint {
+      background: linear-gradient(135deg, rgba(212,166,89,.07), rgba(212,166,89,.02));
+      border: 1px solid rgba(212,166,89,.18);
+    }
+    .buy-blueprint .buy-inner {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 24px;
+      align-items: center;
+    }
+    .buy-icon {
+      font-size: 2.2rem;
+      color: var(--amber);
+      filter: drop-shadow(0 0 12px var(--amber-glow));
+    }
+    @media (max-width: 640px) {
+      .setup-step {
+        grid-template-columns: 1fr;
+        padding: 22px 20px;
+      }
+      .step-number {
+        font-size: 2rem;
+        min-width: auto;
+      }
+      .buy-blueprint .buy-inner {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="inner">
+    <div class="logo"><a href="./">mochi <span>templates</span></a></div>
+    <nav>
+      <a href="./setup-guide.html" class="active" style="color:var(--amber);">Setup Guide</a>
+      <a href="./product/trading-journal-pro.html">Template</a>
+      <a href="./setup-guide.html#faq">FAQ</a>
+      <a href="./legal/terms.html">Terms</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="inner">
+    <div style="font-size:2.4rem;margin-bottom:22px;filter:drop-shadow(0 0 22px var(--amber-glow));">◈</div>
+    <h1>Setup Guide</h1>
+    <p>A quick walkthrough to get your <strong>Trading Journal Pro</strong> up and running in Notion — under 5 minutes, zero config.</p>
+  </div>
+</section>
+
+<section class="features">
+  <div class="inner">
+    <div class="setup-list">
+
+        <!-- Step 1 -->
+        <div class="setup-step">
+          <div class="step-number">01</div>
+          <div class="step-body">
+            <h3>Get your duplication link</h3>
+            <p>After checkout on Lemon Squeezy you'll receive an email with a <strong>Notion duplication link</strong>. Check your inbox (and spam) — it should arrive instantly. Haven't received it? Email <a href="mailto:jayvinn.pacheco@gmail.com">jayvinn.pacheco@gmail.com</a>.</p>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="setup-step">
+          <div class="step-number">02</div>
+          <div class="step-body">
+            <h3>Duplicate into your workspace</h3>
+            <p>Click the duplication link. Notion opens a preview — hit <strong>Duplicate</strong> in the top-right. The full journal copies into your personal (or team) workspace as a private copy — no shared-editing conflicts.</p>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="setup-step">
+          <div class="step-number">03</div>
+          <div class="step-body">
+            <h3>Tour the layout</h3>
+            <p>Three main views: <strong>Trade Entry</strong> (add trades), <strong>Dashboard</strong> (hit-rate / R:R / biggest wins &amp; losses), and <strong>Daily / Weekly / Monthly</strong> P&amp;L roll-ups. All pull from the same underlying database — data stays in sync everywhere.</p>
+          </div>
